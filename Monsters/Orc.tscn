@@ -6,10 +6,9 @@
 [ext_resource path="res://DandD/Currency/CopperPiece.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 22.4722
+radius = 14.0
 
 [node name="Orc" instance=ExtResource( 1 )]
-speed = 30
 xp_value = 100
 hp_dice = {
 "d": 8,
@@ -18,7 +17,7 @@ hp_dice = {
 }
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
-scale = Vector2( 0.25, 0.25 )
+scale = Vector2( 0.15, 0.15 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
@@ -26,7 +25,6 @@ shape = SubResource( 1 )
 
 [node name="Attack" parent="." index="7" instance=ExtResource( 2 )]
 display_name = "Greataxe"
-combinable = null
 to_hit_modifier = 5
 damage_dice = {
 "d": 12,

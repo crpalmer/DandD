@@ -8,5 +8,5 @@ display_name = "gold piece"
 plural = "gold pieces"
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
-scale = Vector2( 0.15, 0.15 )
+scale = Vector2( 0.075, 0.075 )
 texture = ExtResource( 1 )

@@ -5,16 +5,10 @@
 [ext_resource path="res://GameEngine/Actors/Attack.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 206.774
+radius = 100.0
 
 [node name="OwlBear" instance=ExtResource( 1 )]
 ac = 13
-damage_dice = {
-"d": 8,
-"n": 2,
-"plus": 5
-}
-speed = 40
 xp_value = 700
 close_radius = 10
 hp_dice = {
@@ -24,8 +18,8 @@ hp_dice = {
 }
 
 [node name="Sprite" type="Sprite" parent="." index="5"]
-position = Vector2( -7, -1 )
-scale = Vector2( 0.15, 0.15 )
+position = Vector2( -5, -1 )
+scale = Vector2( 0.075, 0.075 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="6"]
@@ -35,7 +29,6 @@ shape = SubResource( 1 )
 
 [node name="BeakAttack" parent="." index="7" instance=ExtResource( 3 )]
 display_name = "Beak"
-time_between_uses = 1.0
 to_hit_modifier = 7
 damage_dice = {
 "d": 10,
@@ -45,7 +38,6 @@ damage_dice = {
 
 [node name="ClawsAttack" parent="." index="8" instance=ExtResource( 3 )]
 display_name = "Claws"
-time_between_uses = 1.0
 to_hit_modifier = 7
 damage_dice = {
 "d": 8,

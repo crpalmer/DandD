@@ -12,5 +12,5 @@ can_attack_with = true
 acceptable = 1
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
-scale = Vector2( 0.075, 0.075 )
+scale = Vector2( 0.035, 0.035 )
 texture = ExtResource( 1 )
