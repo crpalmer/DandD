@@ -4,8 +4,8 @@
 [ext_resource path="res://GameEngine/Inventory/InventoryThing.tscn" type="PackedScene" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 4.94975
-height = 28.2843
+radius = 3.53554
+height = 24.0416
 
 [node name="LongSword" instance=ExtResource( 2 )]
 display_name = "long sword"
@@ -25,5 +25,5 @@ shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 rotation = -1.85703
-scale = Vector2( 0.05, 0.05 )
+scale = Vector2( 0.04, 0.04 )
 texture = ExtResource( 1 )
