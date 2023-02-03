@@ -10,6 +10,7 @@ height = 24.0416
 [node name="LongSword" instance=ExtResource( 2 )]
 display_name = "long sword"
 plural = "long swords"
+value = 15
 weight = 3
 damage_dice = {
 "d": 8,

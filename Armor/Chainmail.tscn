@@ -9,8 +9,9 @@ radius = 13.0
 
 [node name="Chainmail" instance=ExtResource( 2 )]
 display_name = "chainmail"
+value = 10
 weight = 20
-ac = 13
+ac = 12
 acceptable = 4
 
 [node name="CollisionShape2D" parent="." index="0"]

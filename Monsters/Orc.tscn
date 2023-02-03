@@ -9,6 +9,7 @@
 radius = 14.0
 
 [node name="Orc" instance=ExtResource( 1 )]
+long_description = "a stooped creature with a piggish face with prominent lower canines"
 xp_value = 100
 hp_dice = {
 "d": 8,

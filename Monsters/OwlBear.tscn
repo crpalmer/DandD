@@ -8,6 +8,7 @@
 radius = 100.0
 
 [node name="OwlBear" instance=ExtResource( 1 )]
+long_description = "a bear shaped creature covered in feathers"
 ac = 13
 xp_value = 700
 close_radius = 10

@@ -3,8 +3,14 @@
 [ext_resource path="res://DandD/MagicItems/ring.png" type="Texture" id=1]
 [ext_resource path="res://GameEngine/Inventory/InventoryThing.tscn" type="PackedScene" id=2]
 
+[sub_resource type="CircleShape2D" id=1]
+resource_local_to_scene = true
+radius = 13.0
+
 [node name="RingOfProtection" instance=ExtResource( 2 )]
 display_name = "golden ring"
+long_description = "ring of protection +2"
+value = 1000
 ac_modifier = 1
 acceptable = 1
 
