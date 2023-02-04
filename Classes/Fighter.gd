@@ -22,8 +22,8 @@ func number_of_attacks(level):
 		11-19:  return 3
 		20-99999: return 4
 
-func strength_modifier(strength):
-	return .strength_modifier(strength) + profiency_modifier(strength)
+func strength_modifier(strength, level):
+	return .strength_modifier(strength, level) + profiency_modifier(level)
 
-func constitution_modifier(constitution):
-	return .constitution_modifier(constitution) + profiency_modifier(constitution)
+func constitution_modifier(constitution, level):
+	return .constitution_modifier(constitution, level) + profiency_modifier(level)
