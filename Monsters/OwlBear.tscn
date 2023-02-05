@@ -11,7 +11,7 @@ radius = 100.0
 long_description = "a bear shaped creature covered in feathers"
 ac = 13
 xp_value = 700
-close_radius = 10
+close_radius = 5
 hp_dice = {
 "d": 10,
 "n": 7,
