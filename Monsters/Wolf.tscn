@@ -8,6 +8,7 @@
 radius = 14.0
 
 [node name="Wolf" instance=ExtResource( 2 )]
+display_name = "wolf"
 ac = 13
 speed_feet_per_round = 40
 xp_value = 50
@@ -17,6 +18,12 @@ hp_dice = {
 "plus": 2
 }
 
+[node name="Navigation" parent="." index="5"]
+path_desired_distance = 15.0
+target_desired_distance = 15.0
+path_max_distance = 60.0
+avoidance_enabled = false
+
 [node name="Sprite" type="Sprite" parent="." index="6"]
 scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 1 )
@@ -25,6 +32,7 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="Bite" parent="." index="8" instance=ExtResource( 3 )]
+display_name = "bite"
 damage_dice = {
 "d": 4,
 "n": 2,

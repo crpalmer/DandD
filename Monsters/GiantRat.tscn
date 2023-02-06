@@ -4,9 +4,8 @@
 [ext_resource path="res://GameEngine/Actors/Monster.tscn" type="PackedScene" id=2]
 [ext_resource path="res://GameEngine/Actors/Attack.tscn" type="PackedScene" id=3]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 8.00208
-height = 13.5179
+[sub_resource type="CircleShape2D" id=1]
+radius = 15.0
 
 [node name="GiantRat" instance=ExtResource( 2 )]
 display_name = "giant rat"
@@ -20,11 +19,10 @@ hp_dice = {
 }
 
 [node name="Navigation" parent="." index="5"]
-path_desired_distance = 10.0
-target_desired_distance = 10.0
-path_max_distance = 50.0
+avoidance_enabled = false
 
 [node name="Bite" parent="." index="6" instance=ExtResource( 3 )]
+display_name = "bite"
 damage_dice = {
 "d": 4,
 "n": 1,
@@ -32,8 +30,8 @@ damage_dice = {
 }
 
 [node name="Sprite" type="Sprite" parent="." index="7"]
-position = Vector2( 0, 2 )
-scale = Vector2( 0.05, 0.05 )
+position = Vector2( -4, 0 )
+scale = Vector2( 0.075, 0.075 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="8"]

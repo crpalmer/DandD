@@ -5,9 +5,10 @@
 [ext_resource path="res://GameEngine/Actors/Attack.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 100.0
+radius = 15.0
 
 [node name="OwlBear" instance=ExtResource( 1 )]
+display_name = "owlbear"
 long_description = "a bear shaped creature covered in feathers"
 ac = 13
 xp_value = 700
@@ -19,17 +20,16 @@ hp_dice = {
 }
 
 [node name="Sprite" type="Sprite" parent="." index="5"]
-position = Vector2( -5, -1 )
+position = Vector2( 0, -1 )
 scale = Vector2( 0.075, 0.075 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="6"]
 position = Vector2( -1, 0 )
-scale = Vector2( 0.15, 0.15 )
 shape = SubResource( 1 )
 
 [node name="BeakAttack" parent="." index="7" instance=ExtResource( 3 )]
-display_name = "Beak"
+display_name = "beak"
 to_hit_modifier = 7
 damage_dice = {
 "d": 10,
@@ -38,10 +38,16 @@ damage_dice = {
 }
 
 [node name="ClawsAttack" parent="." index="8" instance=ExtResource( 3 )]
-display_name = "Claws"
+display_name = "claw"
 to_hit_modifier = 7
 damage_dice = {
 "d": 8,
 "n": 2,
 "plus": 5
 }
+
+[node name="Navigation" parent="." index="9"]
+path_desired_distance = 15.0
+target_desired_distance = 15.0
+path_max_distance = 60.0
+avoidance_enabled = false
