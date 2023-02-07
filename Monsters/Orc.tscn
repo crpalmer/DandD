@@ -3,7 +3,7 @@
 [ext_resource path="res://GameEngine/Actors/Monster.tscn" type="PackedScene" id=1]
 [ext_resource path="res://GameEngine/Actors/Attack.tscn" type="PackedScene" id=2]
 [ext_resource path="res://DandD/Monsters/orc.png" type="Texture" id=3]
-[ext_resource path="res://DandD/Currency/CopperPiece.tscn" type="PackedScene" id=4]
+[ext_resource path="res://DandD/Currency/SilverPiece.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 14.0
@@ -34,13 +34,12 @@ damage_dice = {
 "plus": 3
 }
 
-[node name="CopperPiece" parent="." index="8" instance=ExtResource( 4 )]
-visible = false
-random_min = 2
-random_max = 10
-
-[node name="Navigation" parent="." index="9"]
+[node name="Navigation" parent="." index="8"]
 path_desired_distance = 15.0
 target_desired_distance = 15.0
 path_max_distance = 60.0
-avoidance_enabled = false
+
+[node name="SilverPiece" parent="." index="9" instance=ExtResource( 4 )]
+visible = false
+random_min = -2
+random_max = 5

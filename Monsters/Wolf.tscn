@@ -22,7 +22,6 @@ hp_dice = {
 path_desired_distance = 15.0
 target_desired_distance = 15.0
 path_max_distance = 60.0
-avoidance_enabled = false
 
 [node name="Sprite" type="Sprite" parent="." index="6"]
 scale = Vector2( 0.05, 0.05 )

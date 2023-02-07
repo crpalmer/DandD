@@ -10,7 +10,6 @@ radius = 15.0
 [node name="GiantRat" instance=ExtResource( 2 )]
 display_name = "giant rat"
 ac = 12
-to_hit_modifier = 4
 xp_value = 25
 hp_dice = {
 "d": 6,
@@ -18,11 +17,9 @@ hp_dice = {
 "plus": 1
 }
 
-[node name="Navigation" parent="." index="5"]
-avoidance_enabled = false
-
 [node name="Bite" parent="." index="6" instance=ExtResource( 3 )]
 display_name = "bite"
+to_hit_modifier = 4
 damage_dice = {
 "d": 4,
 "n": 1,
