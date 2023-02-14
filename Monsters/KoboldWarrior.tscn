@@ -13,15 +13,7 @@ hp_dice = {
 "plus": 4
 }
 
-[node name="Scimitar" parent="." index="6" instance=ExtResource( 1 )]
-to_hit_modifier = 5
-damage_dice = {
-"d": 6,
-"n": 1,
-"plus": 3
-}
-
-[node name="DaggerAttack" parent="." index="7"]
+[node name="DaggerAttack" parent="." index="4"]
 to_hit_modifier = 5
 damage_dice = {
 "d": 4,
@@ -29,5 +21,13 @@ damage_dice = {
 "plus": 3
 }
 
-[node name="Sprite" parent="." index="8"]
+[node name="Sprite" parent="." index="5"]
 scale = Vector2( 0.09, 0.09 )
+
+[node name="Scimitar" parent="." index="6" instance=ExtResource( 1 )]
+to_hit_modifier = 5
+damage_dice = {
+"d": 6,
+"n": 1,
+"plus": 3
+}
