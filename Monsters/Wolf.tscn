@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dau5slaiirol0"]
 
-[ext_resource type="Texture2D" uid="uid://c0bnaic04aic7" path="res://DandD/Monsters/wolf.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://1yef82wgvyu3" path="res://DandD/Monsters/wolf.png" id="1"]
 [ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="2"]
-[ext_resource type="PackedScene" path="res://GameEngine/Actors/Attack.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://ypgejynnvhpc" path="res://GameEngine/Actors/Attack.tscn" id="3"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 14.0
@@ -26,9 +26,11 @@ texture = ExtResource("1")
 shape = SubResource("1")
 
 [node name="Bite" parent="." index="5" instance=ExtResource("3")]
+to_hit_modifier = 4
 damage_dice = {
 "d": 4,
 "n": 2,
 "plus": 2
 }
+attack_range = 5
 display_name = "bite"
