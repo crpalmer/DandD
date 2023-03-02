@@ -15,3 +15,5 @@ random_max = 20
 [node name="Chainmail" parent="." instance=ExtResource( 4 )]
 
 [node name="LongSword" parent="." instance=ExtResource( 3 )]
+
+[node name="LongSword2" parent="." instance=ExtResource( 3 )]

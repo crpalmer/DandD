@@ -1,52 +1,47 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://co6xw61g0dd"]
 
-[ext_resource path="res://GameEngine/Actors/Monster.tscn" type="PackedScene" id=1]
-[ext_resource path="res://DandD/Monsters/owlbear.png" type="Texture" id=2]
-[ext_resource path="res://GameEngine/Actors/Attack.tscn" type="PackedScene" id=3]
+[ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://2qrrhnkcucam" path="res://DandD/Monsters/owlbear.png" id="2"]
+[ext_resource type="PackedScene" path="res://GameEngine/Actors/Attack.tscn" id="3"]
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="CircleShape2D" id="1"]
 radius = 20.0
 
-[node name="OwlBear" instance=ExtResource( 1 )]
-display_name = "owlbear"
-long_description = "a bear shaped creature covered in feathers"
-ac = 13
-xp_value = 700
-close_radius = 5
+[node name="OwlBear" instance=ExtResource("1")]
 hp_dice = {
 "d": 10,
 "n": 7,
 "plus": 21
 }
+display_name = "owlbear"
+long_description = "a bear shaped creature covered in feathers"
+ac = 13
+xp_value = 700
+close_radius = 5
 
-[node name="Sprite" type="Sprite" parent="." index="5"]
-position = Vector2( 0, -1 )
-scale = Vector2( 0.1, 0.1 )
-texture = ExtResource( 2 )
+[node name="Sprite2D" type="Sprite2D" parent="." index="3"]
+position = Vector2(0, -1)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="6"]
-position = Vector2( -1, 0 )
-shape = SubResource( 1 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="4"]
+position = Vector2(-1, 0)
+shape = SubResource("1")
 
-[node name="BeakAttack" parent="." index="7" instance=ExtResource( 3 )]
-display_name = "beak"
+[node name="BeakAttack" parent="." index="5" instance=ExtResource("3")]
 to_hit_modifier = 7
 damage_dice = {
 "d": 10,
 "n": 1,
 "plus": 5
 }
+display_name = "beak"
 
-[node name="ClawsAttack" parent="." index="8" instance=ExtResource( 3 )]
-display_name = "claw"
+[node name="ClawsAttack" parent="." index="6" instance=ExtResource("3")]
 to_hit_modifier = 7
 damage_dice = {
 "d": 8,
 "n": 2,
 "plus": 5
 }
-
-[node name="Navigation" parent="." index="9"]
-path_desired_distance = 15.0
-target_desired_distance = 15.0
-path_max_distance = 60.0
+display_name = "claw"

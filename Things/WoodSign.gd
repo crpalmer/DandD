@@ -1,6 +1,7 @@
 extends Thing
 
-export(String) var text
+@export var text: String
 
 func _ready():
+	super()
 	if text: $Label.text = text

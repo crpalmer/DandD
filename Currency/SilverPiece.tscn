@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://DandD/Currency/silver-piece.png" type="Texture" id=1]
+[ext_resource path="res://DandD/Currency/silver-piece.png" type="Texture2D" id=1]
 [ext_resource path="res://GameEngine/Inventory/Currency.tscn" type="PackedScene" id=2]
 
 [node name="SilverPiece" instance=ExtResource( 2 )]
@@ -9,6 +9,6 @@ plural = "silver pieces"
 unit_value = 0.1
 abbreviation = "sp"
 
-[node name="Sprite" type="Sprite" parent="." index="1"]
+[node name="Sprite2D" type="Sprite2D" parent="." index="1"]
 scale = Vector2( 0.075, 0.075 )
 texture = ExtResource( 1 )

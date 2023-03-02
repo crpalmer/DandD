@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://GameEngine/Objects/StaticThing.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Town/bed.png" type="Texture" id=2]
+[ext_resource path="res://Town/bed.png" type="Texture2D" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 15, 18 )
@@ -9,7 +9,7 @@ extents = Vector2( 15, 18 )
 [node name="Bed" instance=ExtResource( 1 )]
 display_name = "bed"
 
-[node name="Sprite" type="Sprite" parent="." index="0"]
+[node name="Sprite2D" type="Sprite2D" parent="." index="0"]
 rotation = 3.14159
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )

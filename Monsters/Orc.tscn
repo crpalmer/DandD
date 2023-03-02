@@ -1,45 +1,40 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=6 format=3 uid="uid://d32hdei1r2s38"]
 
-[ext_resource path="res://GameEngine/Actors/Monster.tscn" type="PackedScene" id=1]
-[ext_resource path="res://GameEngine/Actors/Attack.tscn" type="PackedScene" id=2]
-[ext_resource path="res://DandD/Monsters/orc.png" type="Texture" id=3]
-[ext_resource path="res://DandD/Currency/SilverPiece.tscn" type="PackedScene" id=4]
+[ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://GameEngine/Actors/Attack.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://cvo7qnuxqywq2" path="res://DandD/Monsters/orc.png" id="3"]
+[ext_resource type="PackedScene" path="res://DandD/Currency/SilverPiece.tscn" id="4"]
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="CircleShape2D" id="1"]
 radius = 14.0
 
-[node name="Orc" instance=ExtResource( 1 )]
-display_name = "orc"
-long_description = "a stooped creature with a piggish face with prominent lower canines"
-xp_value = 100
+[node name="Orc" instance=ExtResource("1")]
 hp_dice = {
 "d": 8,
 "n": 2,
 "plus": 6
 }
+display_name = "orc"
+long_description = "a stooped creature with a piggish face with prominent lower canines"
+xp_value = 100
 
-[node name="Sprite" type="Sprite" parent="." index="0"]
-scale = Vector2( 0.15, 0.15 )
-texture = ExtResource( 3 )
+[node name="Sprite2D" type="Sprite2D" parent="." index="0"]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
-shape = SubResource( 1 )
+shape = SubResource("1")
 
-[node name="Attack" parent="." index="7" instance=ExtResource( 2 )]
-display_name = "greataxe"
+[node name="Attack" parent="." index="5" instance=ExtResource("2")]
 to_hit_modifier = 5
 damage_dice = {
 "d": 12,
 "n": 1,
 "plus": 3
 }
+display_name = "greataxe"
 
-[node name="Navigation" parent="." index="8"]
-path_desired_distance = 15.0
-target_desired_distance = 15.0
-path_max_distance = 60.0
-
-[node name="SilverPiece" parent="." index="9" instance=ExtResource( 4 )]
+[node name="SilverPiece" parent="." index="6" instance=ExtResource("4")]
 visible = false
 random_min = -2
 random_max = 5
