@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://2g6e2jpu4t3c"]
 
-[ext_resource type="PackedScene" path="res://GameEngine/Actors/Attack.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://ypgejynnvhpc" path="res://GameEngine/Actors/Attack.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="2"]
-[ext_resource type="Texture2D" uid="uid://c7fhu243rwhg2" path="res://DandD/Monsters/kobold.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://csp3sj2yvqtxk" path="res://DandD/Monsters/kobold.png" id="3"]
 [ext_resource type="PackedScene" path="res://DandD/Currency/CopperPiece.tscn" id="4"]
 
 [sub_resource type="CircleShape2D" id="1"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bsdoh2ykse30w"]
 
-[ext_resource type="PackedScene" path="res://GameEngine/Actors/Attack.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://ypgejynnvhpc" path="res://GameEngine/Actors/Attack.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://2g6e2jpu4t3c" path="res://DandD/Monsters/Kobold.tscn" id="2"]
 
 [node name="KoboldWarrior" instance=ExtResource("2")]
