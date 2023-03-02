@@ -1,11 +1,11 @@
 [gd_resource type="TileSet" load_steps=13 format=3 uid="uid://bgsl5od7jjx0i"]
 
-[ext_resource type="Texture2D" uid="uid://sgjsekft7rm1" path="res://DandD/Tilesets/cave.png" id="1_nwdhg"]
-[ext_resource type="Texture2D" uid="uid://i1k56l3jjcvw" path="res://DandD/Tilesets/floor-tiles.png" id="2_6u4re"]
-[ext_resource type="Texture2D" uid="uid://pcjqygrqvvj4" path="res://DandD/Tilesets/walls-stone.png" id="3_ykl37"]
-[ext_resource type="Texture2D" uid="uid://djejxjq3yt38y" path="res://DandD/Tilesets/nature.png" id="4_joq5n"]
-[ext_resource type="Texture2D" uid="uid://bl7lllynr46oi" path="res://DandD/Tilesets/walls-brick.png" id="5_ky6j3"]
-[ext_resource type="Texture2D" uid="uid://dst2myifdq4ht" path="res://DandD/Tilesets/wall-log.png" id="6_44e3h"]
+[ext_resource type="Texture2D" uid="uid://g377l0jk7gja" path="res://DandD/Tilesets/cave.png" id="1_nwdhg"]
+[ext_resource type="Texture2D" uid="uid://s1y43m65ipuf" path="res://DandD/Tilesets/floor-tiles.png" id="2_6u4re"]
+[ext_resource type="Texture2D" uid="uid://bp3kk3euatrp" path="res://DandD/Tilesets/walls-stone.png" id="3_ykl37"]
+[ext_resource type="Texture2D" uid="uid://dpnecqqdxwnbs" path="res://DandD/Tilesets/nature.png" id="4_joq5n"]
+[ext_resource type="Texture2D" uid="uid://cm3fx7w3w3nak" path="res://DandD/Tilesets/walls-brick.png" id="5_ky6j3"]
+[ext_resource type="Texture2D" uid="uid://dqm57g85p0tgq" path="res://DandD/Tilesets/wall-log.png" id="6_44e3h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_75ncv"]
 texture = ExtResource("1_nwdhg")
