@@ -1,15 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://mhrdr5ond01u"]
 
 [ext_resource type="FontFile" uid="uid://xv4t5yvtsu38" path="res://Main/HUD/Pong Font.ttf" id="1"]
-[ext_resource type="PackedScene" path="res://DandD/Weapons/LongSword.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://myyysrf50p81" path="res://DandD/Weapons/LongSword.tscn" id="2"]
 
 [node name="LongSwordPlus1" instance=ExtResource("2")]
-to_hit_modifier = 1
-damage_dice = {
-"d": 8,
-"n": 1,
-"plus": 1
-}
 display_name = "long sword +1"
 
 [node name="Label" type="Label" parent="." index="2"]
@@ -19,3 +13,10 @@ offset_bottom = 15.0
 theme_override_fonts/font = ExtResource("1")
 theme_override_font_sizes/font_size = 10
 text = "+1"
+
+[node name="Attack" parent="." index="4"]
+damage_dice = {
+"d": 8,
+"n": 1,
+"plus": 1
+}
