@@ -24,9 +24,10 @@ rotation = -1.85703
 scale = Vector2(0.04, 0.04)
 texture = ExtResource("1")
 
-[node name="MeleeAttack" parent="." index="3" instance=ExtResource("3_cdpyf")]
+[node name="MeleeAttack" parent="." index="2" instance=ExtResource("3_cdpyf")]
 damage_dice = {
 "d": 8,
 "n": 1,
 "plus": 0
 }
+display_name = "slash"
