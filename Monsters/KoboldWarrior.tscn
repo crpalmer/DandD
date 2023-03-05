@@ -18,6 +18,3 @@ scale = Vector2(0.09, 0.09)
 
 [node name="Scimitar" parent="." index="6" instance=ExtResource("1")]
 to_hit_modifier = 5
-
-[node name="Equipment" parent="." index="8"]
-visible = true
