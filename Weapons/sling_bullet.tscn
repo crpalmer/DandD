@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://i8m01uvrcik6"]
+
+[ext_resource type="PackedScene" uid="uid://dukhomkrs7lq3" path="res://GameEngine/Combat/missile.tscn" id="1_p6iw4"]
+[ext_resource type="Texture2D" uid="uid://cx2t5j4ngbcmh" path="res://DandD/Weapons/sling-bullet.png" id="2_44ju6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0t0ct"]
+radius = 3.3
+height = 11.0
+
+[node name="SlingBullet" instance=ExtResource("1_p6iw4")]
+damage_dice = {
+"d": 4,
+"n": 1,
+"plus": 0
+}
+group = "sling-ammo"
+display_name = "bullet"
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(-0.5, 0.6)
+scale = Vector2(0.033, 0.033)
+texture = ExtResource("2_44ju6")
+
+[node name="CollisionShape2D" parent="." index="1"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_0t0ct")

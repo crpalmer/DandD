@@ -1,9 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://2g6e2jpu4t3c"]
+[gd_scene load_steps=9 format=3 uid="uid://bjjvjqp2sjqdw"]
 
-[ext_resource type="PackedScene" uid="uid://ypgejynnvhpc" path="res://GameEngine/Actors/Attack.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="2"]
 [ext_resource type="Texture2D" uid="uid://csp3sj2yvqtxk" path="res://DandD/Monsters/kobold.png" id="3"]
 [ext_resource type="PackedScene" path="res://DandD/Currency/CopperPiece.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://b417tiry0hiyr" path="res://GameEngine/Combat/attack_choice.tscn" id="4_vuhx3"]
+[ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="5_ova4n"]
+[ext_resource type="PackedScene" uid="uid://cub52xr1ua5hw" path="res://GameEngine/Combat/ranged_attack.tscn" id="6_3vckf"]
+[ext_resource type="PackedScene" uid="uid://i8m01uvrcik6" path="res://DandD/Weapons/sling_bullet.tscn" id="6_8lqmc"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 13.0
@@ -18,24 +21,38 @@ display_name = "kobold"
 long_description = "reptilian humanoid"
 xp_value = 25
 
-[node name="DaggerAttack" parent="." index="3" instance=ExtResource("1")]
+[node name="Sprite2D" type="Sprite2D" parent="." index="2"]
+position = Vector2(0, -1)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="3"]
+shape = SubResource("1")
+
+[node name="CopperPiece" parent="." index="4" instance=ExtResource("4")]
+visible = false
+random_min = -2
+random_max = 5
+
+[node name="AttackChoice" parent="." index="6" instance=ExtResource("4_vuhx3")]
+visible = false
+
+[node name="Sling" parent="AttackChoice" index="0" instance=ExtResource("6_3vckf")]
+ammunition_group = "sling-ammo"
 to_hit_modifier = 4
+display_name = "sling"
+
+[node name="Dagger" parent="AttackChoice" index="1" instance=ExtResource("5_ova4n")]
 damage_dice = {
 "d": 4,
 "n": 1,
 "plus": 2
 }
+to_hit_modifier = 4
 display_name = "dagger"
 
-[node name="Sprite2D" type="Sprite2D" parent="." index="4"]
-position = Vector2(0, -1)
-scale = Vector2(0.06, 0.06)
-texture = ExtResource("3")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="5"]
-shape = SubResource("1")
-
-[node name="CopperPiece" parent="." index="6" instance=ExtResource("4")]
-visible = false
-random_min = -2
-random_max = 5
+[node name="SlingBullet" parent="Equipment" index="0" instance=ExtResource("6_8lqmc")]
+damage_modifier = 2
+combinable = true
+n = 2
+max_uses = 1

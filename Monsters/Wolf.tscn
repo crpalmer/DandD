@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://1yef82wgvyu3" path="res://DandD/Monsters/wolf.png" id="1"]
 [ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="2"]
-[ext_resource type="PackedScene" uid="uid://ypgejynnvhpc" path="res://GameEngine/Actors/Attack.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://ypgejynnvhpc" path="res://GameEngine/Combat/melee_attack.tscn" id="3"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 14.0
@@ -32,5 +32,4 @@ damage_dice = {
 "n": 2,
 "plus": 2
 }
-attack_range = 5
 display_name = "bite"

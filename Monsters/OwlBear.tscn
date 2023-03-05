@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://dvraad5m0utko" path="res://DandD/Monsters/owlbear.png" id="2"]
-[ext_resource type="PackedScene" uid="uid://ypgejynnvhpc" path="res://GameEngine/Actors/Attack.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="3"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 20.0
@@ -29,19 +29,19 @@ position = Vector2(-1, 0)
 shape = SubResource("1")
 
 [node name="BeakAttack" parent="." index="5" instance=ExtResource("3")]
-to_hit_modifier = 7
 damage_dice = {
 "d": 10,
 "n": 1,
 "plus": 5
 }
+to_hit_modifier = 7
 display_name = "beak"
 
 [node name="ClawsAttack" parent="." index="6" instance=ExtResource("3")]
-to_hit_modifier = 7
 damage_dice = {
 "d": 8,
 "n": 2,
 "plus": 5
 }
+to_hit_modifier = 7
 display_name = "claw"

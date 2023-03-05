@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbsgpfat1yn7k"]
+
+[ext_resource type="PackedScene" uid="uid://dukhomkrs7lq3" path="res://GameEngine/Combat/missile.tscn" id="1_uvyxu"]
+[ext_resource type="Texture2D" uid="uid://5wf3hi5acd4s" path="res://DandD/Weapons/arrow.png" id="2_15oji"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rxrkf"]
+resource_local_to_scene = true
+radius = 13.0
+
+[node name="Arrow" instance=ExtResource("1_uvyxu")]
+damage_dice = {
+"d": 6,
+"n": 1,
+"plus": 0
+}
+group = "bow-ammo"
+combinable = true
+display_name = "arrow"
+
+[node name="Sprite2D" parent="." index="0"]
+rotation = 1.06465
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_15oji")
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("CircleShape2D_rxrkf")

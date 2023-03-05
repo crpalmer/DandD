@@ -14,9 +14,6 @@ theme_override_fonts/font = ExtResource("1")
 theme_override_font_sizes/font_size = 10
 text = "+1"
 
-[node name="Attack" parent="." index="4"]
-damage_dice = {
-"d": 8,
-"n": 1,
-"plus": 1
-}
+[node name="MeleeAttack" parent="." index="4"]
+damage_modifier = 1
+to_hit_modifier = 1

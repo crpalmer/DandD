@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bsdoh2ykse30w"]
 
-[ext_resource type="PackedScene" uid="uid://ypgejynnvhpc" path="res://GameEngine/Actors/Attack.tscn" id="1"]
-[ext_resource type="PackedScene" uid="uid://2g6e2jpu4t3c" path="res://DandD/Monsters/Kobold.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://bjjvjqp2sjqdw" path="res://DandD/Monsters/Kobold.tscn" id="2"]
 
 [node name="KoboldWarrior" instance=ExtResource("2")]
 hp_dice = {
@@ -13,21 +13,11 @@ display_name = "kobold warrior"
 ac = 15
 xp_value = 200
 
-[node name="DaggerAttack" parent="." index="3"]
-to_hit_modifier = 5
-damage_dice = {
-"d": 4,
-"n": 1,
-"plus": 3
-}
-
-[node name="Sprite2D" parent="." index="4"]
+[node name="Sprite2D" parent="." index="2"]
 scale = Vector2(0.09, 0.09)
 
 [node name="Scimitar" parent="." index="6" instance=ExtResource("1")]
 to_hit_modifier = 5
-damage_dice = {
-"d": 6,
-"n": 1,
-"plus": 3
-}
+
+[node name="Equipment" parent="." index="8"]
+visible = true

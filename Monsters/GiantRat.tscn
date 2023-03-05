@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cmchsen3ahmlg"]
+[gd_scene load_steps=5 format=3 uid="uid://tysyvqlib8s2"]
 
-[ext_resource type="Texture2D" uid="uid://dw6rp3horqerd" path="res://DandD/Monsters/giant-rat.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://1b3dhf7h43s2" path="res://DandD/Monsters/giant-rat.png" id="1"]
 [ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="2"]
-[ext_resource type="PackedScene" path="res://GameEngine/Actors/Attack.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="3"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 15.0
@@ -18,16 +18,17 @@ ac = 12
 xp_value = 25
 
 [node name="Bite" parent="." index="4" instance=ExtResource("3")]
-to_hit_modifier = 4
 damage_dice = {
 "d": 4,
 "n": 1,
 "plus": 2
 }
+to_hit_modifier = 4
 display_name = "bite"
 
 [node name="Sprite2D" type="Sprite2D" parent="." index="5"]
-position = Vector2(-4, 0)
+position = Vector2(-2, 5)
+rotation = -1.1013
 scale = Vector2(0.075, 0.075)
 texture = ExtResource("1")
 

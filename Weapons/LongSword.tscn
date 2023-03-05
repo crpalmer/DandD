@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bi1nci4wqfkbd" path="res://DandD/Weapons/sword.png" id="1"]
 [ext_resource type="PackedScene" uid="uid://gkepy344g01" path="res://GameEngine/Inventory/InventoryThing.tscn" id="2"]
-[ext_resource type="PackedScene" uid="uid://ypgejynnvhpc" path="res://GameEngine/Actors/Attack.tscn" id="3_qcydc"]
+[ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="3_cdpyf"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
 radius = 3.53554
@@ -24,8 +24,7 @@ rotation = -1.85703
 scale = Vector2(0.04, 0.04)
 texture = ExtResource("1")
 
-[node name="Attack" parent="." index="3" instance=ExtResource("3_qcydc")]
-to_hit_modifier = 1
+[node name="MeleeAttack" parent="." index="3" instance=ExtResource("3_cdpyf")]
 damage_dice = {
 "d": 8,
 "n": 1,

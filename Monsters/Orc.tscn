@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://d32hdei1r2s38"]
+[gd_scene load_steps=5 format=3 uid="uid://d32hdei1r2s38"]
 
 [ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="1"]
-[ext_resource type="PackedScene" path="res://GameEngine/Actors/Attack.tscn" id="2"]
-[ext_resource type="Texture2D" uid="uid://cvo7qnuxqywq2" path="res://DandD/Monsters/orc.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cwvfo1lgx2e8d" path="res://DandD/Monsters/orc.png" id="3"]
 [ext_resource type="PackedScene" path="res://DandD/Currency/SilverPiece.tscn" id="4"]
 
 [sub_resource type="CircleShape2D" id="1"]
@@ -25,16 +24,7 @@ texture = ExtResource("3")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 shape = SubResource("1")
 
-[node name="Attack" parent="." index="5" instance=ExtResource("2")]
-to_hit_modifier = 5
-damage_dice = {
-"d": 12,
-"n": 1,
-"plus": 3
-}
-display_name = "greataxe"
-
-[node name="SilverPiece" parent="." index="6" instance=ExtResource("4")]
+[node name="SilverPiece" parent="." index="5" instance=ExtResource("4")]
 visible = false
 random_min = -2
 random_max = 5

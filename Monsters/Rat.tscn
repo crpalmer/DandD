@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://bibrd1okk5rlv"]
+
+[ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="1_rvf81"]
+[ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="2_7q0j6"]
+[ext_resource type="Texture2D" uid="uid://1b3dhf7h43s2" path="res://DandD/Monsters/giant-rat.png" id="3_vlwpc"]
+
+[sub_resource type="CircleShape2D" id="1"]
+
+[node name="Rat" instance=ExtResource("1_rvf81")]
+hp_dice = {
+"d": 4,
+"n": 1,
+"plus": -1
+}
+display_name = "rat"
+speed_feet_per_round = 20
+xp_value = 10
+vision_radius = 30
+
+[node name="Bite" parent="." index="4" instance=ExtResource("2_7q0j6")]
+to_hit_modifier = 4
+display_name = "bite"
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="5"]
+position = Vector2(-1, 2)
+rotation = -1.1013
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("3_vlwpc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="6"]
+rotation = -1.09956
+shape = SubResource("1")
