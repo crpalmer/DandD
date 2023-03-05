@@ -5,6 +5,7 @@ extends Door
 @export var closed_degrees: int = 0
 
 func _ready():
+	super()
 	duplicate_sprite("Open", open_degrees)
 	duplicate_sprite("Closed", closed_degrees)
 

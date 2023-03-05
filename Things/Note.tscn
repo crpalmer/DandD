@@ -1,17 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=4 format=3 uid="uid://c2yac1rc75u75"]
 
-[ext_resource path="res://informational-text.png" type="Texture2D" id=1]
-[ext_resource path="res://GameEngine/Inventory/InventoryThing.tscn" type="PackedScene" id=2]
+[ext_resource type="Texture2D" uid="uid://jgvfjlfbvlrd" path="res://informational-text.png" id="1"]
+[ext_resource type="PackedScene" uid="uid://gkepy344g01" path="res://GameEngine/Inventory/InventoryThing.tscn" id="2"]
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="CircleShape2D" id="1"]
 resource_local_to_scene = true
 radius = 13.0
 
-[node name="InventoryThing" instance=ExtResource( 2 )]
+[node name="InventoryThing" instance=ExtResource("2")]
 
 [node name="CollisionShape2D" parent="." index="0"]
-shape = SubResource( 1 )
+shape = SubResource("1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." index="1"]
-scale = Vector2( 0.03, 0.028 )
-texture = ExtResource( 1 )
+scale = Vector2(0.03, 0.028)
+texture = ExtResource("1")
