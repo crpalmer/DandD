@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3]
 
-[ext_resource path="res://DandD/Currency/copper-piece.png" type="Texture2D" id=1]
-[ext_resource path="res://GameEngine/Inventory/Currency.tscn" type="PackedScene" id=2]
+[ext_resource type="Texture2D" uid="uid://2ppi4oq6gst2" path="res://DandD/Currency/copper-piece.png" id="1"]
+[ext_resource type="PackedScene" path="res://GameEngine/Inventory/currency.tscn" id="2"]
 
 [node name="CopperPiece" instance=ExtResource( 2 )]
 display_name = "copper piece"

@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dfbkgms76kovm"]
+[gd_scene load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://DandD/Classes/Fighter.gd" id="1"]
-[ext_resource type="PackedScene" path="res://DandD/Currency/GoldPiece.tscn" id="2"]
-[ext_resource type="PackedScene" uid="uid://myyysrf50p81" path="res://DandD/Weapons/LongSword.tscn" id="3"]
-[ext_resource type="PackedScene" path="res://DandD/Armor/Chainmail.tscn" id="4"]
+[ext_resource type="Script" path="res://DandD/Classes/fighter.gd" id="1"]
+[ext_resource type="PackedScene" path="res://DandD/Currency/gold_piece.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://DandD/Weapons/long_sword.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://DandD/Armor/chainmail.tscn" id="4"]
 
 [node name="Fighter" type="Node"]
 script = ExtResource("1")

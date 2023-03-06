@@ -14,6 +14,7 @@ damage_dice = {
 "plus": 0
 }
 group = "sling-ammo"
+combinable = true
 display_name = "bullet"
 
 [node name="Sprite2D" parent="." index="0"]

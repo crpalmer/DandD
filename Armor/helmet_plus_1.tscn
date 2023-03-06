@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://drt8jt5jctcvi"]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="FontFile" uid="uid://xv4t5yvtsu38" path="res://Main/HUD/Pong Font.ttf" id="1"]
-[ext_resource type="PackedScene" path="res://DandD/Armor/Helmet.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://DandD/Armor/helmet.tscn" id="2"]
 
 [sub_resource type="CircleShape2D" id="1"]
 resource_local_to_scene = true

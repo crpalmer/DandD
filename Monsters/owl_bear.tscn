@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://co6xw61g0dd"]
+[gd_scene load_steps=5 format=3]
 
-[ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://GameEngine/Actors/monster.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://dvraad5m0utko" path="res://DandD/Monsters/owlbear.png" id="2"]
 [ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="3"]
 

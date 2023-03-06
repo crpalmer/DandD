@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://mhrdr5ond01u"]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="FontFile" uid="uid://xv4t5yvtsu38" path="res://Main/HUD/Pong Font.ttf" id="1"]
-[ext_resource type="PackedScene" uid="uid://myyysrf50p81" path="res://DandD/Weapons/LongSword.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://myyysrf50p81" path="res://DandD/Weapons/long_sword.tscn" id="2"]
 
 [node name="LongSwordPlus1" instance=ExtResource("2")]
 display_name = "long sword +1"

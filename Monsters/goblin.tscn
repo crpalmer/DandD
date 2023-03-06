@@ -1,6 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://byv11nv4bc88u"]
+[gd_scene load_steps=8 format=3]
 
-[ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="1_xbirx"]
+[ext_resource type="PackedScene" path="res://GameEngine/Actors/monster.tscn" id="1_xbirx"]
 [ext_resource type="PackedScene" uid="uid://bbsgpfat1yn7k" path="res://DandD/Weapons/arrow.tscn" id="2_tlx34"]
 [ext_resource type="PackedScene" uid="uid://b417tiry0hiyr" path="res://GameEngine/Combat/attack_choice.tscn" id="3_m5nww"]
 [ext_resource type="PackedScene" uid="uid://cub52xr1ua5hw" path="res://GameEngine/Combat/ranged_attack.tscn" id="4_a4bm2"]

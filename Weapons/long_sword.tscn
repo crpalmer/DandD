@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://myyysrf50p81"]
+[gd_scene load_steps=5 format=3]
 
 [ext_resource type="Texture2D" uid="uid://bi1nci4wqfkbd" path="res://DandD/Weapons/sword.png" id="1"]
-[ext_resource type="PackedScene" uid="uid://gkepy344g01" path="res://GameEngine/Inventory/InventoryThing.tscn" id="2"]
-[ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="3_cdpyf"]
+[ext_resource type="PackedScene" uid="uid://gkepy344g01" path="res://GameEngine/Inventory/inventory_thing.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://GameEngine/Combat/melee_attack.tscn" id="3_cdpyf"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
 radius = 3.53554

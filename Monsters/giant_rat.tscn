@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://tysyvqlib8s2"]
+[gd_scene load_steps=5 format=3 uid="uid://dke3p3svfswjf"]
 
 [ext_resource type="Texture2D" uid="uid://1b3dhf7h43s2" path="res://DandD/Monsters/giant-rat.png" id="1"]
-[ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="2"]
-[ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://GameEngine/Actors/monster.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://GameEngine/Combat/melee_attack.tscn" id="3"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 15.0

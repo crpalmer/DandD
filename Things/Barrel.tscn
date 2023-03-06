@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=4 format=3]
 
-[ext_resource path="res://GameEngine/Objects/StaticThing.tscn" type="PackedScene" id=1]
-[ext_resource path="res://DandD/Tilesets/barrel.png" type="Texture2D" id=2]
+[ext_resource type="PackedScene" uid="uid://col46dls31egg" path="res://GameEngine/Objects/static_thing.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://cyoouw7awptyo" path="res://DandD/Tilesets/barrel.png" id="2"]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 18.0

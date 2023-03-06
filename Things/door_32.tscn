@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://c3bas6gnm42jv"]
+[gd_scene load_steps=7 format=3]
 
-[ext_resource type="PackedScene" path="res://GameEngine/Objects/Door.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://GameEngine/Objects/door.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://cyn258nwcg435" path="res://DandD/Tilesets/door-10px.png" id="3"]
 
 [sub_resource type="RectangleShape2D" id="2"]

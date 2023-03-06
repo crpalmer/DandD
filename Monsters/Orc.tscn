@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://d32hdei1r2s38"]
+[gd_scene load_steps=5 format=3]
 
-[ext_resource type="PackedScene" uid="uid://bwunorlgiyrww" path="res://GameEngine/Actors/Monster.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://GameEngine/Actors/monster.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://cwvfo1lgx2e8d" path="res://DandD/Monsters/orc.png" id="3"]
-[ext_resource type="PackedScene" path="res://DandD/Currency/SilverPiece.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://DandD/Currency/silver_piece.tscn" id="4"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 14.0
