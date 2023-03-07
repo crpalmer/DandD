@@ -1,10 +1,12 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://b5acrv5c3a3qn"]
 
 [ext_resource type="PackedScene" path="res://GameEngine/Actors/monster.tscn" id="1_rvf81"]
-[ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="2_7q0j6"]
+[ext_resource type="PackedScene" path="res://GameEngine/Combat/melee_attack.tscn" id="2_7q0j6"]
 [ext_resource type="Texture2D" uid="uid://1b3dhf7h43s2" path="res://DandD/Monsters/giant-rat.png" id="3_vlwpc"]
 
-[sub_resource type="CircleShape2D" id="1"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_tll4v"]
+resource_local_to_scene = true
+radius = 8.0
 
 [node name="Rat" instance=ExtResource("1_rvf81")]
 hp_dice = {
@@ -17,16 +19,15 @@ speed_feet_per_round = 20
 xp_value = 10
 vision_radius = 30
 
-[node name="Bite" parent="." index="4" instance=ExtResource("2_7q0j6")]
-to_hit_modifier = 4
-display_name = "bite"
-
-[node name="Sprite2D" type="Sprite2D" parent="." index="5"]
+[node name="Sprite2Dfoo" parent="." index="3"]
 position = Vector2(-1, 2)
-rotation = -1.1013
+rotation = -1.09956
 scale = Vector2(0.04, 0.04)
 texture = ExtResource("3_vlwpc")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="6"]
-rotation = -1.09956
-shape = SubResource("1")
+[node name="CollisionShape2Dfoo" parent="." index="4"]
+shape = SubResource("CircleShape2D_tll4v")
+
+[node name="Bite" parent="." index="6" instance=ExtResource("2_7q0j6")]
+to_hit_modifier = 4
+display_name = "bite"

@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bsdoh2ykse30w"]
+[gd_scene load_steps=4 format=3 uid="uid://bsdoh2ykse30w"]
 
-[ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="1"]
-[ext_resource type="PackedScene" uid="uid://bjjvjqp2sjqdw" path="res://DandD/Monsters/Kobold.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://GameEngine/Combat/melee_attack.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://r5plohk1mwui" path="res://DandD/Monsters/Kobold.tscn" id="2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vlfb1"]
+resource_local_to_scene = true
+radius = 15.0
 
 [node name="KoboldWarrior" instance=ExtResource("2")]
 hp_dice = {
@@ -13,8 +17,13 @@ display_name = "kobold warrior"
 ac = 15
 xp_value = 200
 
-[node name="Sprite2D" parent="." index="2"]
-scale = Vector2(0.09, 0.09)
+[node name="Sprite2Dfoo" parent="." index="3"]
+scale = Vector2(0.08, 0.08)
 
-[node name="Scimitar" parent="." index="6" instance=ExtResource("1")]
+[node name="CollisionShape2Dfoo" parent="." index="4"]
+shape = SubResource("CircleShape2D_vlfb1")
+
+[node name="Scimitar" parent="AttackChoice" index="0" instance=ExtResource("1")]
+position = Vector2(0, 16.6667)
+scale = Vector2(16.6667, 16.6667)
 to_hit_modifier = 5

@@ -1,13 +1,14 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=8 format=3 uid="uid://bfijuuey1u08m"]
 
 [ext_resource type="PackedScene" path="res://GameEngine/Actors/monster.tscn" id="1_xbirx"]
 [ext_resource type="PackedScene" uid="uid://bbsgpfat1yn7k" path="res://DandD/Weapons/arrow.tscn" id="2_tlx34"]
-[ext_resource type="PackedScene" uid="uid://b417tiry0hiyr" path="res://GameEngine/Combat/attack_choice.tscn" id="3_m5nww"]
-[ext_resource type="PackedScene" uid="uid://cub52xr1ua5hw" path="res://GameEngine/Combat/ranged_attack.tscn" id="4_a4bm2"]
-[ext_resource type="PackedScene" uid="uid://nc468kf8di2y" path="res://GameEngine/Combat/melee_attack.tscn" id="5_iv078"]
+[ext_resource type="PackedScene" path="res://GameEngine/Combat/attack_choice.tscn" id="3_m5nww"]
+[ext_resource type="PackedScene" uid="uid://bo355gpxjlbe4" path="res://GameEngine/Combat/ranged_attack.tscn" id="4_a4bm2"]
+[ext_resource type="PackedScene" path="res://GameEngine/Combat/melee_attack.tscn" id="5_iv078"]
 [ext_resource type="Texture2D" uid="uid://dcrlxa0n2unlt" path="res://DandD/Monsters/goblin.png" id="6_g4gjd"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ndj3q"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_l4bic"]
+resource_local_to_scene = true
 radius = 12.0
 
 [node name="Goblin" instance=ExtResource("1_xbirx")]
@@ -20,10 +21,18 @@ display_name = "goblin"
 ac = 15
 xp_value = 50
 
+[node name="Sprite2Dfoo" parent="." index="3"]
+position = Vector2(-1, -4)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("6_g4gjd")
+
+[node name="CollisionShape2Dfoo" parent="." index="4"]
+shape = SubResource("CircleShape2D_l4bic")
+
 [node name="Arrow" parent="Equipment" index="0" instance=ExtResource("2_tlx34")]
 n = 3
 
-[node name="AttackChoice" parent="." index="4" instance=ExtResource("3_m5nww")]
+[node name="AttackChoice" parent="." index="6" instance=ExtResource("3_m5nww")]
 
 [node name="ShortBow" parent="AttackChoice" index="0" instance=ExtResource("4_a4bm2")]
 damage_modifier = 2
@@ -41,11 +50,3 @@ damage_dice = {
 }
 to_hit_modifier = 4
 display_name = "scimitar"
-
-[node name="Sprite2D" type="Sprite2D" parent="." index="5"]
-position = Vector2(-1, -4)
-scale = Vector2(0.05, 0.05)
-texture = ExtResource("6_g4gjd")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="6"]
-shape = SubResource("CircleShape2D_ndj3q")

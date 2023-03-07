@@ -1,10 +1,11 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://b1wr8onhitrhn"]
 
 [ext_resource type="PackedScene" path="res://GameEngine/Actors/monster.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://cwvfo1lgx2e8d" path="res://DandD/Monsters/orc.png" id="3"]
 [ext_resource type="PackedScene" path="res://DandD/Currency/silver_piece.tscn" id="4"]
 
-[sub_resource type="CircleShape2D" id="1"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_8wvj3"]
+resource_local_to_scene = true
 radius = 14.0
 
 [node name="Orc" instance=ExtResource("1")]
@@ -17,14 +18,14 @@ display_name = "orc"
 long_description = "a stooped creature with a piggish face with prominent lower canines"
 xp_value = 100
 
-[node name="Sprite2D" type="Sprite2D" parent="." index="0"]
+[node name="Sprite2Dfoo" parent="." index="3"]
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("3")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
-shape = SubResource("1")
+[node name="CollisionShape2Dfoo" parent="." index="4"]
+shape = SubResource("CircleShape2D_8wvj3")
 
-[node name="SilverPiece" parent="." index="5" instance=ExtResource("4")]
+[node name="SilverPiece" parent="." index="6" instance=ExtResource("4")]
 visible = false
 random_min = -2
 random_max = 5

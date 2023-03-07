@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ll520l8jxvhx"]
 
 [ext_resource type="Texture2D" uid="uid://5xql1wf2agpj" path="res://DandD/Currency/gold-piece.png" id="1"]
-[ext_resource type="PackedScene" path="res://GameEngine/Inventory/currency.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://d1cjcbexhibjo" path="res://GameEngine/Inventory/currency.tscn" id="2"]
 
 [node name="GoldPiece" instance=ExtResource("2")]
 plural = "gold pieces"

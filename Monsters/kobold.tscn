@@ -4,11 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://i8m01uvrcik6" path="res://DandD/Weapons/sling_bullet.tscn" id="2_v1epc"]
 [ext_resource type="Texture2D" uid="uid://csp3sj2yvqtxk" path="res://DandD/Monsters/kobold.png" id="3_y5c1g"]
 [ext_resource type="PackedScene" path="res://GameEngine/Combat/attack_choice.tscn" id="4_j3jv5"]
-[ext_resource type="PackedScene" path="res://GameEngine/Combat/ranged_attack.tscn" id="5_er7to"]
+[ext_resource type="PackedScene" uid="uid://bo355gpxjlbe4" path="res://GameEngine/Combat/ranged_attack.tscn" id="5_er7to"]
 [ext_resource type="PackedScene" path="res://GameEngine/Combat/melee_attack.tscn" id="6_x4pnf"]
 [ext_resource type="PackedScene" path="res://DandD/Currency/copper_piece.tscn" id="7_cl7tp"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_bafuv"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_r0m3s"]
+resource_local_to_scene = true
 radius = 13.0
 
 [node name="Kobold" instance=ExtResource("1_u0vnv")]
@@ -21,15 +22,23 @@ display_name = "kobold"
 long_description = "reptilian humanoid"
 xp_value = 25
 
-[node name="SlingBullet" parent="Equipment" index="0" instance=ExtResource("2_v1epc")]
-n = 2
-
-[node name="Sprite2D" type="Sprite2D" parent="." index="4"]
+[node name="Sprite2Dfoo" parent="." index="3"]
 position = Vector2(0, -1)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("3_y5c1g")
 
-[node name="AttackChoice" parent="." index="5" instance=ExtResource("4_j3jv5")]
+[node name="CollisionShape2Dfoo" parent="." index="4"]
+shape = SubResource("CircleShape2D_r0m3s")
+
+[node name="SlingBullet" parent="Equipment" index="0" instance=ExtResource("2_v1epc")]
+n = 2
+
+[node name="CopperPiece" parent="." index="6" instance=ExtResource("7_cl7tp")]
+visible = false
+random_min = -2
+random_max = 5
+
+[node name="AttackChoice" parent="." index="7" instance=ExtResource("4_j3jv5")]
 position = Vector2(0, -1)
 scale = Vector2(0.06, 0.06)
 
@@ -46,11 +55,3 @@ damage_dice = {
 }
 to_hit_modifier = 4
 display_name = "dagger"
-
-[node name="CopperPiece" parent="." index="6" instance=ExtResource("7_cl7tp")]
-visible = false
-random_min = -2
-random_max = 5
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="7"]
-shape = SubResource("CircleShape2D_bafuv")
