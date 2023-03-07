@@ -17,10 +17,10 @@ display_name = "kobold warrior"
 ac = 15
 xp_value = 200
 
-[node name="Sprite2Dfoo" parent="." index="3"]
+[node name="Sprite2D" parent="." index="3"]
 scale = Vector2(0.08, 0.08)
 
-[node name="CollisionShape2Dfoo" parent="." index="4"]
+[node name="CollisionShape2D" parent="." index="4"]
 shape = SubResource("CircleShape2D_vlfb1")
 
 [node name="Scimitar" parent="AttackChoice" index="0" instance=ExtResource("1")]

@@ -20,11 +20,11 @@ ac = 13
 xp_value = 700
 close_radius = 5
 
-[node name="Sprite2Dfoo" parent="." index="3"]
+[node name="Sprite2D" parent="." index="3"]
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2")
 
-[node name="CollisionShape2Dfoo" parent="." index="4"]
+[node name="CollisionShape2D" parent="." index="4"]
 shape = SubResource("CircleShape2D_7t52u")
 
 [node name="BeakAttack" parent="." index="6" instance=ExtResource("3")]

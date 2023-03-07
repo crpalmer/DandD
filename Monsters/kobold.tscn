@@ -22,12 +22,12 @@ display_name = "kobold"
 long_description = "reptilian humanoid"
 xp_value = 25
 
-[node name="Sprite2Dfoo" parent="." index="3"]
+[node name="Sprite2D" parent="." index="3"]
 position = Vector2(0, -1)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("3_y5c1g")
 
-[node name="CollisionShape2Dfoo" parent="." index="4"]
+[node name="CollisionShape2D" parent="." index="4"]
 shape = SubResource("CircleShape2D_r0m3s")
 
 [node name="SlingBullet" parent="Equipment" index="0" instance=ExtResource("2_v1epc")]
