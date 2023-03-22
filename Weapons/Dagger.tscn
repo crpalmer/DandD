@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://dae0ix11bykxq"]
 
 [ext_resource type="Texture2D" uid="uid://db8ovevxs3rxs" path="res://DandD/Weapons/dagger.png" id="1"]
-[ext_resource type="PackedScene" uid="uid://gkepy344g01" path="res://GameEngine/Inventory/inventory_thing.tscn" id="2"]
-[ext_resource type="PackedScene" path="res://GameEngine/Combat/melee_attack.tscn" id="3_av8kt"]
+[ext_resource type="PackedScene" uid="uid://dobw76g84p8sc" path="res://GameEngine/Inventory/inventory_thing.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://ccud464mqe0pf" path="res://GameEngine/Combat/melee_attack.tscn" id="3_av8kt"]
 
 [sub_resource type="CircleShape2D" id="1"]
 resource_local_to_scene = true

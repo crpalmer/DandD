@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://i8m01uvrcik6"]
 
-[ext_resource type="PackedScene" uid="uid://dukhomkrs7lq3" path="res://GameEngine/Combat/missile.tscn" id="1_p6iw4"]
+[ext_resource type="PackedScene" uid="uid://1f5cdmnulfqy" path="res://GameEngine/Combat/missile.tscn" id="1_p6iw4"]
 [ext_resource type="Texture2D" uid="uid://cx2t5j4ngbcmh" path="res://DandD/Weapons/sling-bullet.png" id="2_44ju6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0t0ct"]

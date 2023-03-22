@@ -22,6 +22,10 @@ display_name = "kobold"
 long_description = "reptilian humanoid"
 xp_value = 25
 
+[node name="NavigationAgent2D" parent="." index="2"]
+path_desired_distance = 20.0
+target_desired_distance = 32.0
+
 [node name="Sprite2D" parent="." index="3"]
 position = Vector2(0, -1)
 scale = Vector2(0.06, 0.06)

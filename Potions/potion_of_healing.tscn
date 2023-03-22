@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://cg81jmo1vbevp"]
 
-[ext_resource type="PackedScene" uid="uid://gkepy344g01" path="res://GameEngine/Inventory/inventory_thing.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://dobw76g84p8sc" path="res://GameEngine/Inventory/inventory_thing.tscn" id="1"]
 [ext_resource type="Script" path="res://DandD/Potions/potion_of_healing.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://5eflyp2rkka4" path="res://DandD/Potions/potion-of-healing.png" id="3"]
 

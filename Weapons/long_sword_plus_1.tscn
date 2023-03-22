@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://bhb75ungt2mv3"]
 
 [ext_resource type="FontFile" uid="uid://xv4t5yvtsu38" path="res://Main/HUD/Pong Font.ttf" id="1"]
-[ext_resource type="PackedScene" uid="uid://myyysrf50p81" path="res://DandD/Weapons/long_sword.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://jrsowh5yilkk" path="res://DandD/Weapons/long_sword.tscn" id="2"]
 
 [node name="LongSwordPlus1" instance=ExtResource("2")]
 display_name = "long sword +1"
@@ -14,6 +14,6 @@ theme_override_fonts/font = ExtResource("1")
 theme_override_font_sizes/font_size = 10
 text = "+1"
 
-[node name="MeleeAttack" parent="." index="4"]
+[node name="MeleeAttack" parent="." index="3"]
 damage_modifier = 1
 to_hit_modifier = 1

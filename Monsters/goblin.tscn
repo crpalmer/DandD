@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bfijuuey1u08m"]
 
-[ext_resource type="PackedScene" path="res://GameEngine/Actors/monster.tscn" id="1_xbirx"]
+[ext_resource type="PackedScene" uid="uid://cx1r76lrsrr5w" path="res://GameEngine/Actors/monster.tscn" id="1_xbirx"]
 [ext_resource type="PackedScene" uid="uid://bbsgpfat1yn7k" path="res://DandD/Weapons/arrow.tscn" id="2_tlx34"]
 [ext_resource type="PackedScene" path="res://GameEngine/Combat/attack_choice.tscn" id="3_m5nww"]
 [ext_resource type="PackedScene" uid="uid://bo355gpxjlbe4" path="res://GameEngine/Combat/ranged_attack.tscn" id="4_a4bm2"]
@@ -20,6 +20,10 @@ hp_dice = {
 display_name = "goblin"
 ac = 15
 xp_value = 50
+
+[node name="NavigationAgent2D" parent="." index="2"]
+path_desired_distance = 20.0
+target_desired_distance = 32.0
 
 [node name="Sprite2D" parent="." index="3"]
 position = Vector2(-1, -4)

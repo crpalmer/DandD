@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://belmsofv420k3"]
 
-[ext_resource type="PackedScene" uid="uid://col46dls31egg" path="res://GameEngine/Objects/static_thing.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://8akk6r6mba0x" path="res://GameEngine/Objects/static_thing.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://c4n3x3ktrysbh" path="res://DandD/Images/sign-blank.png" id="3"]
 [ext_resource type="Script" path="res://DandD/Things/wood_sign.gd" id="4"]
 
